@@ -54,11 +54,14 @@ h3, p    {
     font-size: 36px;
 }
 
-.banner-content, img {
-    max-height: auto;
+.banner-content, .banner-img {
     max-width: 50%;
     padding-bottom: 48px;
     
+}
+
+.banner-img img {
+    max-width: 100%;
 }
 
 .info-section h3 {
@@ -70,4 +73,25 @@ h3, p    {
 
 .card-container {
     display: flex;
+    justify-content: center;
+}
+
+.card {
+    height: 200px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+}
+
+.card-img {
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    border: 8px solid #1f2937;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+    
 }
