@@ -27,7 +27,7 @@ h3, p    {
     font-size: 48px;
     font-weight: bold;
     font-style: italic;
-    margin: 0 100px;
+    margin: 0 80px;
 }
 
 .header ul {
@@ -44,11 +44,10 @@ h3, p    {
 }
 
 .banner {
-    padding: 0 100px;
+    padding: 28px 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    gap: 24px;
 }
 
 .banner h3 {
@@ -56,13 +55,29 @@ h3, p    {
 }
 
 .banner-content, .banner-img {
+    height: 300px;
     max-width: 50%;
-    padding-bottom: 48px;
-    
+    padding-bottom: 48px; 
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
 }
 
 .banner-img img {
     max-width: 100%;
+}
+
+button {
+    border: none;
+    border-radius: 12px;
+    padding: 8px 16px;
+    color: #f9faf8;
+    background-color: #3882f6;
 }
 
 .info-section h3 {
