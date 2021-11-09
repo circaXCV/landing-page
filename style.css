@@ -7,11 +7,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h3, p    {
-    padding: 0;
-    margin: 0;
-}
-
 .header, .footer, .banner {
     margin: 0;
     padding: 16px 0;
@@ -19,27 +14,31 @@ h3, p    {
     align-items: center;
     background-color: #1f2937;
     color: #f9faf8;
-    
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 8px 0;
 }
 
 .header {
     justify-content: space-between;
 }
 
-.footer {
-    justify-content: center;
-}
-
 .logo {
     font-size: 48px;
     font-weight: bold;
     font-style: italic;
-    margin: 0 150px;
+    margin: 0 12%;
 }
 
 .header ul {
     list-style-type: none;
-    margin: 0px 150px;
+    margin: 0px 12%;
     padding: 0;
     display: flex;
     gap: 16px;
@@ -51,9 +50,9 @@ h3, p    {
 }
 
 .banner {
-    padding: 28px 150px;
+    padding: 5% 12%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 24px;
 }
 
@@ -61,16 +60,9 @@ h3, p    {
     font-size: 36px;
 }
 
-.banner-content, .banner-img {
-    height: 300px;
-    max-width: 50%;
-    padding-bottom: 36px; 
-}
-
 .banner-content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: flex-start;
     text-align: justify;
     gap: 16px;
@@ -89,17 +81,20 @@ button {
     background-color: #3882f6;
 }
 
+.info-section {
+    padding: 36px 12%;
+}
+
 .info-section h3 {
     text-align: center;
     font-size: 24px;
-    padding-top: 50px;
-
 }
 
 .card-container {
     display: flex;
     justify-content: center;
-    padding: 50px 150px;
+    flex-wrap: wrap;
+    padding: 36px 0;
 }
 
 .card {
@@ -109,10 +104,9 @@ button {
     align-items: center;
     gap: 16px;
     padding: 20px;
-
 }
 
-.card-img {
+.card-img { 
     height: 200px;
     width: 200px;
     box-sizing: border-box;
@@ -120,11 +114,6 @@ button {
     border-radius: 8px;
     margin: 0;
     padding: 0;
-    
-}
-
-.card-text {
-    max-width: 100%;
 }
 
 .quote {
@@ -132,7 +121,7 @@ button {
     color: #1f2937;
     font-size: 24px;
     font-style: italic;
-    padding: 100px 170px;
+    padding: 6% 12%;
 }
 
 .quote-body {
@@ -145,12 +134,13 @@ button {
 .quote-author {
     text-align: right;
     font-weight: bold;
-    margin-right: 12px;
+    margin-right: 4%;
 }
 
 .cta-container {
     display: flex;
     justify-content: center;
+    padding: 100px 12%;
 
 }
 
@@ -158,18 +148,12 @@ button {
     color: #e5e7eb;
     background: #3882f6;
     border-radius: 16px;
-    margin: 100px 150px;
-    padding: 28px 75px;
+    padding: 28px 8%;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 32px;
-}
-
-.cta-text {
-    padding: 16px;
-    width: 400px;
 }
 
 .cta-text h3 {
@@ -178,4 +162,8 @@ button {
 
 .cta-banner button {
     border: 2px solid #efefef;
+}
+
+.footer {
+    justify-content: center;
 }
